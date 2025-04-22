@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection/HeroSection";
+import OurServices from "@/components/OurServices/OurServices";
 import OurValues from "@/components/OurValues/OurValues";
 import TopNavbar from "@/components/TopNavbar/TopNavbar";
 import Image from "next/image";
@@ -10,6 +11,7 @@ export default function Home() {
         <TopNavbar/>
         <HeroSection/>
         <OurValues/>
+        <OurServices/>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
        
