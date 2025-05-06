@@ -1,5 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import Categories from '../Categories/Categories'
+import Resources from '../Resources/Resources'
+import Company from '../Company/Company'
+import Subscribe from '../Subscribe/Subscribe'
 
 const Partners = () => {
    type PartnerImage={
@@ -25,7 +29,7 @@ const Partners = () => {
    ]
 
   return (
-       <section className="w-full h-screen bg-black-500 text-white flex  justify-evenly text-center p-4 border-2 border-white">
+       <section className="w-full h-screen bg-black-500 text-white flex flex-col gap-y-5 justify-evenly text-center p-4 border-2 border-white">
       <div className="container mx-auto px-4">
        <div className='flex justify-center items-center border-2 border-white my-2'>
            <span className='text-4xl text-[#139CFF] py-2'>Partners</span>
@@ -44,13 +48,28 @@ const Partners = () => {
                  src={partner.partnerImageSrc}
                  alt="partner image"
                  fill
-                 className="object-cover rounded-full"
+                 className="object-cover"
                />
              </div>
 
            </div>
          ))}
          </div>
+       </div>
+
+       <div className='flex  flex-wrap justify-center gap-10 '>
+        <div className='flex gap-10'  >
+        <Categories/>
+          <Resources/>
+          <Company/>
+
+        </div>
+        <div>
+        <Subscribe/>
+        </div>
+          
+         
+
        </div>
    
    
